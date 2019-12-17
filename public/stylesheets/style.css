@@ -1,0 +1,214 @@
+.body1 {
+  background: url(../images/IMG_7218.jpg);
+  /* Nuestra imagen de fondo */
+  background-repeat: no-repeat;
+  /* Indicamos que no se repetira */
+  background-size: cover;
+  /* Encajamos la imagen al 100% del ancho */
+  background-attachment: fixed;
+  /* Establecemos una posicion fija para la imagen */
+  font-family: helvetica, arial, sans-serif;
+  line-height: 20px;
+}
+
+.altura {
+  padding: 20px;
+  height: 700px !important;
+}
+
+.vista {
+  color: red;
+  font-size: 12px !important;
+}
+
+.linea {
+  padding: 20px;
+}
+
+.ser {
+  width: fit-content !important;
+}
+
+.posicion1 {
+  margin-left: 796px;
+}
+
+.footer {
+  height: 100px;
+  background-color: #0b0b0b;
+  padding-left: 214px !important;
+}
+
+.colorL {
+  margin-top: 45px;
+  color: aliceblue;
+}
+
+.navbar {
+  height: 69px;
+  background-color: #0b0b0b !important;
+}
+
+.navbar2 {
+  height: 30px;
+  border: 1px black solid;
+  width: 100%;
+  background-color: darkgrey;
+  text-align: center;
+  background-image: url(../images/account.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: px;
+}
+
+.letra {
+  font-size: 11.2px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin-top: 6px;
+  color: rgb(80, 86, 94);
+}
+
+.menu {
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  color: white !important;
+}
+
+.parala {
+  height: 200px;
+  text-align: -webkit-center;
+}
+
+.para {
+  margin: 289px;
+}
+
+.boton {
+  color: #786a43 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #786a43;
+  transition: all 1s ease;
+  position: relative;
+  margin-top: 25px;
+}
+
+.boton:hover {
+  background: #786a43;
+  color: #fff !important;
+}
+
+.colorLe {
+  color: #786a43;
+  font-variant: all-small-caps;
+}
+
+.tamañoIm {
+  width: 263px;
+  height: 188px;
+}
+
+.back {
+  height: 250px;
+  background-color: rgba(78, 71, 62, 0.219);
+}
+
+.cards {
+  height: 250px;
+  width: 320px;
+  border-radius: 12px;
+}
+
+.imagCom {
+  height: 500px;
+  width: 650px;
+}
+
+.btn {
+  background-color: #786a43 !important;
+}
+
+.linea {
+  color: dimgrey;
+}
+
+.comprar2 {
+  text-align: center;
+  margin-top: 29px;
+}
+
+.compra {
+  text-align: initial;
+}
+
+.comprar1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.precio1 {
+  margin-top: 42px;
+}
+
+.input1 {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.label1 {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(15, 15, 15);
+  background-color: rgb(226, 184, 93);
+  display: inline-block;
+  transition: all .5s;
+  cursor: pointer;
+  padding: 8px 20px !important;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.colorBoton {
+  background-color: rgba(221, 183, 78, 0.692);
+  margin-left: -368px;
+  border-radius: 12px;
+}
+
+.colorNum {
+  font-size: 25px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin-top: 6px;
+  color: rgba(211, 134, 19, 0.884);
+}
+
+.carrito {
+  margin-left: 20px;
+}
+
+.botonBor {
+  background-color: rgba(245, 58, 58, 0.671);
+}
+
+.botonMod {
+  background-color: rgba(233, 182, 17, 0.842);
+}
+
+.carta1 {
+  padding: 0px !important;
+  background-color: #ebe7c9;
+}
+
+.body2 {
+  background-color: #ebe7c9;
+}

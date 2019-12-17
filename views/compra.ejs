@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../javascripts/funciones.js"></script>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="body2">
+    <div class="navbar2">
+        <p class="letra">ENVÍO GRATIS EN TODOS LOS PEDIDOS DE MÁS DE $ 100</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light linea ">
+        <a class="navbar-brand menu posicion2" href="/client/">INICIO</a>
+        <a class="navbar-brand menu" href="#">INFORMACIÓN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="navbar-brand menu dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PRENDAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Camisetas</a>
+                        <a class="dropdown-item" href="#">Sudaderas</a>
+                        <a class="dropdown-item" href="#">Accesorios</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="navbar-brand menu" href="#">VIDEOS</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img src="../images/icons8-color-50.png" class="carrito" alt="">
+    <span id="pantalla" class="colorNum"></span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 comprar2">
+                <% result.forEach(function(shirt){%>
+                <div class="linea">
+                    <img class="imagCom" src="/uploads/<%= shirt.imagen %>">
+                    <% }) %>
+                </div>
+            </div>
+            <div class="col-5 comprar1">
+                <% result.forEach(function(shirt){%>
+                <div class="linea">
+                    <h3 class="card-title compra"><%= shirt.name %></h3>
+                    <h5 class="card-title compra precio1"><%= shirt.price %></h5>
+                    <h5 class="card-title compra">TALLA <select id="talla" class="compra">
+                            <option value="S"><%= shirt.talla %></option>
+                            <option value="M"><%= shirt.talla %></option>
+                            <option value="XL"><%= shirt.talla %></option>
+                            <option value="XXL"><%= shirt.talla %></option>
+                        </select></h5>
+
+                    <h5 class="card-title compra">Quedan <%= shirt.stock %></h5>
+                    <% }) %>
+                    <button class="colorBoton" onclick="plus()">Realizar Compra</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
